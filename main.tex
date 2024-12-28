@@ -1,0 +1,121 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, top=0.6in, left=0.4in, right=0.4in, bottom=0.4in}
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage[hidelinks]{hyperref} % For hyperlinks
+\usepackage{textcomp}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\Large DIVJOT SINGH MANCHANDA}\\[5 pt] % Name
+Mumbai, India | \href{mailto:djsmanchanda@gmail.com}{djsmanchanda@gmail.com} | +91 9137488435 | \href{https://www.linkedin.com/in/djsmanchanda}{linkedin.com/in/djsmanchanda} |  \href{https://github.com/djsmanchanda}{github.com/djsmanchanda} % Contact info
+\end{center}
+
+%Threads: Example and Example \hfill Credit standing: Honors % Additional info
+% Experience Section
+\section*{EXPERIENCE}
+\noindent
+\textbf{IIT Madras, CAMS IIT-M Fintech Innovation Lab} \hfill Chennai, Tamil Nadu\\ % Company name and location
+\textit{Research Intern} \hfill June 2024 - August 2024 % Position and duration
+\begin{itemize}
+    \item Performed \textbf{feasibility analysis} to explore the \textbf{integration of AI in financial modeling} and fintech solutions
+    \item Finetuned a RAG-based LLM on financial Data with web search capabilities. % Job responsibilities and achievements
+\end{itemize}
+
+\noindent
+\textbf{Renault Nissan} \hfill Chennai, Tamil Nadu\\ % Company name and location
+\textit{Technical Intern} \hfill September 2024 - November 2024 % Position and duration
+\begin{itemize}
+    \item Developed an \textbf{algorithm to evaluate past part vendors} based on pricing, lead time, MOQ, quality, defect rates and other variables, enabling data-driven reordering decisions and \textbf{improving}\textbf{ time to make decisions by} \textbf{60\%}
+    \item Designed a \textbf{chatbot} to simplify access to the vendor analysis data using structured outputs, improving decision-making efficiency. % Job responsibilities and achievements
+\end{itemize}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{SRM Institute of Science and Technology}, Kattankulathur, Tamil Nadu \hfill Enrolled: Sept. 2022 | Expected: June 2026\\ % University name and location
+Bachelor's in \textbf{Artificial Intelligence}\hfill \\ % | Major GPA X.XX\\ % Degree and GPA
+Relevant Coursework: Neural Networks and Machine Learning, \textbf{Deep Learning Techniques}, Design in Artificial Intelligence Products, Probabilities and Statistics, Advanced Calculus, Image and Video Processing, \textbf{Reinforcement Learning}.
+
+% Projects Section
+\section*{PROJECTS}
+
+\noindent
+\textbf{Vogue Fusion (PULSE Hackathon)} \hfill IIT Bombay\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/VogueFusion_Pulse} \hfill November - December 2024
+\begin{itemize}
+    \item Secured \textbf{2nd} place out of 500 teams at the PULSE \textbf{Hackathon},\textbf{ IIT Bombay}, winning INR 1L in prize money.
+    \item Developed an algorithm using Pinscrape API for seasonal trend analysis for \textbf{Aditya Birla Group}’s fast-fashion lines.
+    \item Built \textbf{ComfyUI} workflows using \textbf{SDXL} and custom \textbf{LORAs} to automate design processes and reduce time-to-market.
+    \item Designed a custom \textbf{genetic algorithm} to generate reproducible dye mixtures and predict printing costs within \textbf{7\% MOE}.
+\end{itemize}
+
+% Additional Project
+
+\noindent
+\textbf{MirrorBot} \hfill SRM Kattankulathur\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/MirrorBot} \hfill August 2024 - December 2024
+\begin{itemize}
+    \item Implemented data preprocessing of Users' past \textbf{Instagram} and \textbf{WhatsApp} chat histories to ensure relevant content extraction.   
+    \item Fine-tuned \textbf{LLaMA 3.2 (3B)} on the curated dataset to replicate the creator's messaging style and natural conversational flow.
+\end{itemize}
+
+% Skills Section
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python, C, C++, \textbf{CUDA}, PowerShell, Bash
+    \item \textbf{Frameworks:} PyTorch, TensorFlow, Keras, Hugging Face, ComfyUI, LangChain, Flask, Streamlit
+    \item \textbf{Tools and Platforms:} Git, Weights and Biases, Docker, AWS EC2, AWS S3, AWS Lambda
+\end{itemize}
+
+% Achievements
+\section*{ACHIEVEMENTS}
+Won \textbf{multiple} hackathons and competitions with cumulative cash prizes exceeding\textbf{ INR 2,00,000}\begin{itemize}
+    \item \textbf{First rank} at HackStreet 2.0, SRM, Chennai \hfill March 2024
+    \item \textbf{Second rank} in Innofusion'24, SRM, Chennai \hfill February 2024 
+    \item \textbf{Third rank} in Synapses 2.0, National Level Hackathon, PES University, Bangalore \hfill May 2024
+    \end{itemize}
+\textbf{Line Follower Competitions:}
+    \begin{itemize}
+        \item  Built a \textbf{High Speed, High Precision} Line Follower Robot through a custom PCB and a new PID control algorithm. 
+        \item Ranked \textbf{1st} place at \textbf{BITS Pilani}, \textbf{2nd} place at Anna University, and \textbf{3rd} place at Kongu Engineering College, Erode.  
+    \end{itemize}
+
+% Clubs Section
+\section*{VOLUNTEERING - Student Clubs}
+\noindent
+\textbf{DATA SCIENCE COMMUNITY} \hfill Chennai, Tamil Nadu\\ % Company name and location
+\textit{Machine Learning / Research Supervisor} \hfill October 2022 - Ongoing % Position and duration
+\begin{itemize}
+    \item Acquired hands-on experience in advanced AI, ML, DL, and Data Science through multiple cross-domain projects.
+    \item Collaborated with students from diverse backgrounds to develop cutting-edge AI solutions, including a Rhythm Generator.
+
+% Job responsibilities and achievements
+\end{itemize}
+% Additional Experience or Volunteer Work
+\noindent
+\textbf{CINTEL’s NEXT GEN AI} \hfill Chennai, Tamil Nadu\\ % Project or organization name and location
+\textit{Domain Head, Robotics and Generative AI} \hfill January 2023 – September 2024 % Position and duration
+\begin{itemize}
+    \item Mentored and lectured a team of 25 students at making robots incorporating the use of AI
+    \item Organized a large multi-domain hackathon attended by over a 1000 students. % Responsibilities and achievements
+\end{itemize}
+
+% End document
+\end{document}
