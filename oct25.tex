@@ -1,0 +1,173 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, top=0.6in, left=0.4in, right=0.4in, bottom=0.4in}
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage[hidelinks]{hyperref} % For hyperlinks
+\usepackage{textcomp}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% Formatting
+\setlist{noitemsep, topsep=4pt, partopsep=4pt} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\Large DIVJOT SINGH MANCHANDA}\\[3pt]
+\textit{AI Engineer | Builder of Agentic Systems | FinTech \& Cognitive AI Researcher}\\[2pt]
+Mumbai, India | \href{mailto:djsmanchanda@gmail.com}{djsmanchanda@gmail.com} | +91 9137488435 | \href{https://www.linkedin.com/in/djsmanchanda}{linkedin.com/in/djsmanchanda} |  \href{https://github.com/djsmanchanda}{github.com/djsmanchanda} % Contact info
+\end{center}
+
+% Experience Section
+\section*{EXPERIENCE}
+\noindent
+\textbf{IIT Madras, CAMS IIT-M Fintech Innovation Lab} \hfill Chennai, Tamil Nadu\\ % Company name and location
+\textit{Research Intern} \hfill June 2024 – August 2024 % Position and duration
+\begin{itemize}
+    \item Performed feasibility analysis to explore the integration of AI in financial modeling and fintech solutions.
+    \item Fine-tuned a RAG-based LLM on financial data with web search capabilities.
+\end{itemize}
+
+\noindent
+\textbf{Renault Nissan} \hfill Chennai, Tamil Nadu\\ % Company name and location
+\textit{Technical Intern} \hfill September 2024 – November 2024 % Position and duration
+\begin{itemize}
+    \item Developed an algorithm to evaluate past part vendors based on pricing, lead time, MOQ, quality, defect rates and other variables, enabling data-driven reordering decisions and \textbf{reducing decision-making time by 60\%}.
+    \item Designed a chatbot to simplify access to the vendor analysis data using structured outputs, improving decision-making efficiency.
+\end{itemize}
+
+\noindent
+\textbf{FlowNow} \hfill Berkeley, California\\ % Company name and location
+\textit{Technical Intern} \hfill March 2025 – June 2025 % Position and duration
+\begin{itemize}
+    \item Built an \textbf{agentic AI system} creating context-aware questions from user-submitted books to assess their reading comprehension.
+    \item Built an AI model to track user attention span using behavioral metrics, providing real-time insights and measuring the effectiveness of FlowNow's \textbf{neuroscience-based}, gamified training system.
+    \item Integrated a \textbf{Tawk.to}-powered automated support agent to enhance onboarding and improve user engagement.
+\end{itemize}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+\textbf{SRM Institute of Science and Technology}, Kattankulathur, Tamil Nadu \hfill Enrolled: September 2022 | Expected: June 2026\\ % University name and location
+Bachelor of Technology in \textbf{Artificial Intelligence} \hfill \textbf{CGPA: 8.54/10}\\[0.15em]
+Relevant Coursework: Neural Networks and Machine Learning, Deep Learning Techniques, Design in Artificial Intelligence Products, Inferential Statistics and Predictive Analytics, Advanced Calculus, Image and Video Processing, Reinforcement Learning.
+
+\vspace{0.5em}\noindent
+\textbf{University of California, Berkeley}, Berkeley, California \hfill January 2025 – May 2025\\
+\textit{Semester Abroad Program – SCET Startup Semester} \hfill \textbf{GPA: 4.0/4.0}\\[0.15em]
+Courses: Deep Learning for Visual Data, Future of Technology \textit{(Designing Next-Generation Technologies)}, Amazoogle \textit{(AI and the Modern Data-Driven Business Model)}, Challenge Lab \textit{(Designing Startups to Transform Society)}, A. Richard Newton Lecture Series.
+
+% Projects Section
+\section*{PROJECTS}
+
+\noindent
+\textbf{Youtrition} \hfill UC Berkeley, California\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/Youtrition} \hfill March 2025 – May 2025
+\begin{itemize}
+    \item Developed a personalized AI nutrition assistant analyzing users’ diet patterns and fridge contents to recommend balanced meals.
+    \item Integrated the Gemini API for visual food recognition and structured parsing to classify items as fresh, spoiled, or old.
+    \item Designed an intuitive Next.js dashboard with automated image-based inventory updates and adaptive nutritional insights.
+    \item Created as part of the SCET Startup Semester at UC Berkeley, it combines AI, entrepreneurship, and product design.
+\end{itemize}
+
+\vspace{0.2em}
+
+\noindent
+\textbf{Reflection} (Llama Stack Hackathon) \hfill Berkeley, California\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/Reflection} \hfill May 2025 – June 2025
+\begin{itemize}
+    \item Built an agentic AI assistant parsing emails, calendars, and chats to autonomously manage tasks and communication.
+    \item Integrated Qdrant with Gemini embeddings to store contextual memory and support adaptive reasoning.
+    \item Learned user priorities and typing style from past emails to personalize scheduling and email drafting.
+    \item Generated email drafts that users can edit or reprompt before sending, ensuring control and accuracy in communication.
+\end{itemize}
+
+\vspace{0.2em}
+
+\noindent
+\textbf{Vogue Fusion} (PULSE Hackathon) \hfill IIT Bombay\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/VogueFusion_Pulse} \hfill November 2024 – December 2024
+\begin{itemize}
+    \item Secured \textbf{2nd place} out of 500 teams at the PULSE Hackathon, IIT Bombay, winning INR 1L in prize money.
+    \item Developed an algorithm using the Pinscrape API for seasonal trend analysis in fast-fashion lines for the Aditya Birla Group.
+    \item Built ComfyUI workflows leveraging SDXL and custom LoRAs to automate design processes and reduce time-to-market.
+    \item Designed a custom genetic algorithm to generate reproducible dye mixtures and predict printing costs within \textbf{7\% MOE}.
+\end{itemize}
+
+\vspace{0.2em}
+
+\noindent
+\textbf{MirrorBot} \hfill Intel Unnati AI Labs\\
+\textit{Project Link:} \url{https://github.com/djsmanchanda/MirrorBot} \hfill August 2024 – December 2024
+\begin{itemize}
+    \item Implemented data preprocessing of users' past Instagram and WhatsApp chat histories to ensure relevant content extraction.
+    \item Fine-tuned LLaMA 3.2 (3B) on the curated dataset to replicate the creator's messaging style and natural conversational flow.
+    \item Conducted as part of the \href{https://drive.google.com/file/d/19qXnH3R2kTSqghv5wdkE-2p2tb6FoV1I}{Intel Unnati Generative AI Industrial Training – 2024}.
+\end{itemize}
+
+% Skills Section
+\section*{SKILLS}
+\begin{itemize}
+    \item \textbf{Programming Languages:} Python, C, C++, CUDA, PowerShell, Bash
+    \item \textbf{Frameworks \& Libraries:} PyTorch, TensorFlow, Keras, Hugging Face, LangChain, Flask, Streamlit, React, Next.js, ComfyUI
+    \item \textbf{Tools and Platforms:} Git, Weights and Biases, Docker, AWS EC2, AWS S3, AWS Lambda
+\end{itemize}
+
+% Achievements
+\section*{ACHIEVEMENTS}
+Won 6 hackathons and competitions with cumulative cash prizes exceeding \textbf{INR 2,00,000 and USD 1,000}.
+\begin{itemize}
+    \item \textbf{1st place} – HackStreet 2.0, SRM, Chennai \hfill March 2024
+    \item \textbf{2nd place} – Llama Stack Challenge, UC Berkeley, California \hfill April 2025
+    \item \textbf{2nd place} – PULSE Hackathon, Techfest IIT Bombay \hfill December 2024    
+    \item \textbf{2nd place} – Innofusion'24, SRM, Chennai \hfill February 2024
+    \item \textbf{3rd place} – Google Cloud Hacknight, San Francisco \hfill May 2025
+    \item \textbf{3rd place} – Synapses 2.0, National Level Hackathon, PES University, Bangalore \hfill May 2024
+\end{itemize}
+\textbf{Line Follower Competitions:}
+    \begin{itemize}
+        \item Built a high-speed, high-precision line follower robot through a custom PCB and a new PID control algorithm.
+        \item Ranked \textbf{1st place} at BITS Pilani, \textbf{2nd place} at Anna University, and \textbf{3rd place} at Kongu Engineering College, Erode.
+    \end{itemize}
+    
+% Clubs Section
+\section*{VOLUNTEERING - Student Clubs}
+
+\noindent
+\textbf{Data Science Community} \hfill Chennai, Tamil Nadu\\
+\textit{Machine Learning / Research Supervisor} \hfill September 2022 – December 2024
+\begin{itemize}
+    \item Gained hands-on experience in advanced AI, ML, DL, and data science through multiple cross-domain projects.
+    \item Collaborated with students from diverse backgrounds to develop cutting-edge AI solutions, including a rhythm generator.
+\end{itemize}
+
+\noindent
+\textbf{SRM Team Robocon} \hfill Chennai, Tamil Nadu\\
+\textit{System Integration and Electronics Subsystem Engineer} \hfill September 2022 – September 2023
+\begin{itemize}
+    \item Accumulated over \textbf{1,000 hours} of on-site experience in electronics, control systems, and embedded coding.
+    \item Designed and integrated multifunctional robots for international competitions like ABU Robocon, covering ideation, development, testing, and deployment.
+\end{itemize}
+
+\noindent
+\textbf{CINTEL's Next Gen AI} \hfill Chennai, Tamil Nadu\\
+\textit{Domain Head, Robotics and Generative AI} \hfill January 2023 – September 2024
+\begin{itemize}
+    \item Mentored and led a team of 25 students to build robots integrating AI and computer vision capabilities.
+    \item Organized a large multi-domain hackathon attended by over \textbf{1,000 students}.
+\end{itemize}
+
+% End document
+\end{document}
